@@ -60,6 +60,7 @@ class ThirdQuestionFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        Log.i("INFO","3 Destroy")
         _binding = null
     }
 }

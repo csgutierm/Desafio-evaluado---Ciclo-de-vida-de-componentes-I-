@@ -1,7 +1,6 @@
 package com.desafiolatam.surveydonkey.viewmodel
 
 import android.util.Log
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.desafiolatam.surveydonkey.ui.*
 
@@ -17,12 +16,6 @@ class MainViewModel : ViewModel() {
     private var userEmail : String? = null
     private var userSuggest: String? = null
 
-    private val emailAnswer = MutableLiveData<String>()
-/*
-    fun setEmailAnswer(email: String) {
-        emailAnswer.value = email
-    }
-*/
 
     fun addFirstAnswer(value: String): List<String> {
         Log.i("addFirstAnswerMainIf", value)

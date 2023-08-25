@@ -1,6 +1,7 @@
 package com.desafiolatam.surveydonkey.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -73,6 +74,8 @@ class FourthQuestionFragment : Fragment() {
 
 
         binding.run {
+            viewModel.saveUserEmail("")
+            viewModel.saveUserSuggest("")
             answer41.doOnTextChanged { text, _, _, _ ->
                 viewModel.saveUserEmail(text.toString())
             }
@@ -84,8 +87,9 @@ class FourthQuestionFragment : Fragment() {
 
 
 
-  /*  override fun onDestroyView() {
+    override fun onDestroyView() {
         super.onDestroyView()
+        Log.i("INFO","4 Destroy")
         _binding = null
-    }*/
+    }
 }

@@ -1,6 +1,7 @@
 package com.desafiolatam.surveydonkey.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -48,6 +49,7 @@ class SecondQuestionFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        Log.i("INFO","2 Destroy")
         _binding = null
     }
 }
